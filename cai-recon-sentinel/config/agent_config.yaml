@@ -1,0 +1,8 @@
+name: recon_sentinel
+description: Passive reconnaissance agent using CAI
+entrypoint: agents.recon_agent.ReconAgent
+tasks:
+  shodan_scan: tasks.shodan_scan.ShodanScanTask
+  whois_lookup: tasks.whois_lookup.WhoisLookupTask
+  subdomain_enum: tasks.subdomain_enum.SubdomainEnumTask
+
